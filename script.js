@@ -56,7 +56,7 @@ const calculadoraDeMedia = () => {
     function atualizaMediaFinal() {
         const mediaFinal = calculaMediaFinal();
 
-        document.querySelector('#media-final-valor').innerHTML = mediaFinal;
+        document.querySelector('#media-final-valor').innerHTML = mediaFinal.toFixed(2); // toFixed(2) --> Limita as casa decimais em 2
         document.querySelector('#media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado;
 
     }
